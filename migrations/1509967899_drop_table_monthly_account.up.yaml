@@ -1,0 +1,3 @@
+- args:
+    sql: DROP TABLE "monthly_account"
+  type: run_sql

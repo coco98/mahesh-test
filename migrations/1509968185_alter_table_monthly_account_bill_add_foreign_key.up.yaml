@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "monthly_account_bill" ADD FOREIGN KEY ("monthly_account_id")
+      REFERENCES "monthly_account" ("id")
+  type: run_sql

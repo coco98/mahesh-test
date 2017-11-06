@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "monthly_account"(id text NOT NULL, src integer NOT NULL, created_at
+      timestamptz NOT NULL DEFAULT now(), status integer NOT NULL, PRIMARY KEY (id,
+      src) )
+  type: run_sql
+- args:
+    name: monthly_account
+  type: add_existing_table_or_view
